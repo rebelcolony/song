@@ -16,5 +16,5 @@ Configuration:
 
 == TODO
 
-* <tt><%= link_to %><tt> inside .jsx
+* <tt><%= link_to %></tt> inside .jsx
 * seed file
