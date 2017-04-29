@@ -1,28 +1,15 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A rails demo app featuring a react live search component with Elasticsearch.
 
-Things you may want to cover:
+Configuration:
 
-* Ruby version
+* Ruby 2.1.5
 
-* System dependencies
+* Rails 4.2.7.1
 
-* Configuration
+* Elasticsearch 1.2.1
 
-* Database creation
+* searchkick gem
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+* react-rails gem
