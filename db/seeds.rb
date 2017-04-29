@@ -5,3 +5,11 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+songs = Track.create([
+  {artist: "Savatage", name: "Power of the Night"},
+  {artist: "Savatage", name: "Sirens"},
+  {artist: "Savatage", name: "Fight for the Rock"},
+  {artist: "Savatage", name: "Hall of the Mountain King"},
+  {artist: "Savatage", name: "Gutter Ballet"}
+   ])
