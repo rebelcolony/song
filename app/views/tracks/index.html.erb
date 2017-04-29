@@ -1,0 +1,6 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Tracks</h1>
+
+<%= react_component "TracksContainer", { tracksPath: tracks_path(:json), searchPath: search_path } %>
+<%= link_to 'New Track', new_track_path %>
