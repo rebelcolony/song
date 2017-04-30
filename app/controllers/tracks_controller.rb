@@ -62,7 +62,7 @@ class TracksController < ApplicationController
   end
 
   def search
-	  @tracks = Track.search(params[:query])
+	  @tracks = Track.search(params[:query], fields: [:name, :artist], match: :word_start )
 	  if request.xhr?
 		  render :json => @tracks.to_json
 	  else
