@@ -2,20 +2,21 @@ var TracksContainer = React.createClass({
 
 	componentWillMount() {
 		// this.fetchTracks();
+		return { tracks: [] };
 	},
 
-	fetchTracks() {
-		$.ajax({
-	      url: this.props.tracksPath,
-	      dataType: 'json',
-	      success: function(data) {
-	        this.setState({tracks: data});
-	      }.bind(this),
-	      error: function(data) {
-	      	this.setState({tracks: []});
-	      }.bind(this)
-	    });
-	},
+	// fetchTracks() {
+	// 	$.ajax({
+	//       url: this.props.tracksPath,
+	//       dataType: 'json',
+	//       success: function(data) {
+	//         this.setState({tracks: data});
+	//       }.bind(this),
+	//       error: function(data) {
+	//       	this.setState({tracks: []});
+	//       }.bind(this)
+	//     });
+	// },
 
 	searchTracks(event) {
 		if (event.target.value) {
@@ -25,9 +26,7 @@ var TracksContainer = React.createClass({
 		      success: function(data) {
 		        this.setState({tracks: data});
 		      }.bind(this),
-		      error: function(data) {
-		      	this.setState({tracks: []});
-		      }.bind(this)
+
 		    });
 		}
 		// else{
@@ -38,13 +37,14 @@ var TracksContainer = React.createClass({
 
 	getInitialState() {
 		return { tracks: [] };
+
 	},
 
 	render() {
 
 		return (
 			<div>
-				<TracksSearch searchPath={this.props.searchPath} submitPath={this.searchTracks} cancelPath={this.fetchTracks}/>
+				<TracksSearch searchPath={this.props.searchPath} submitPath={this.searchTracks} />
 				<Tracks tracks={this.state.tracks} />
 			</div>
 			);

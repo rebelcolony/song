@@ -7,6 +7,10 @@ class TracksController < ApplicationController
     @tracks = Track.all
   end
 
+  def all
+    @tracks = Track.all
+  end
+
   # GET /tracks/1
   # GET /tracks/1.json
   def show

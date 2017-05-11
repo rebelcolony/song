@@ -1,0 +1,6 @@
+<ul>
+  <% @tracks.each do |track| %>
+    <li><%= track.artist %> - <%= track.name %></li>
+  <% end %>
+</ul>
+<%= link_to 'Back', root_path %>
