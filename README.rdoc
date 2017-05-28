@@ -14,7 +14,9 @@ Configuration:
 
 * react-rails gem
 
-== TODO
+== USAGE
 
-* <tt><%= link_to %></tt> inside .jsx
-* seed file
+Load the provided tracks from the seed file
+<tt>rake db:seed</tt>
+
+== TODO

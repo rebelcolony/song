@@ -3,9 +3,9 @@ var TracksSearch = React.createClass({
 		return (
 			<div>
 				<form ref="form" acceptCharset="UTF-8">
-					<input ref="query" className="search" autoComplete="off" name="query" placeholder="Start typing..." onChange={ this.props.submitPath } />
+					<input ref="query" className="search" autoComplete="off" name="query" placeholder="Search tracks or artists..." onChange={ this.props.submitPath } />
 				</form>
 			</div>
-			);
+		);
 	}
 });
